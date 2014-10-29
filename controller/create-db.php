@@ -7,7 +7,7 @@
 
 	//checks if there is an error in your connection
 	if($connection->connect_error){
-		die("Error: " . $connection->connect_error);
+		die("<p>Error: " . $connection->connect_error . "</p>");
 	}
 	
 	//it checks if select_db exists
@@ -19,12 +19,12 @@
 		$query = $connection->query("CREATE DATABASE $database");
 		if($query){
 			// if it created it prints out the sentence
-			echo "Successfully created database: " . $database;
+			echo "<p>Successfully created database: " . $database . "</p>" ;
 		}
 	}
 	//database is already there
 	else{
-		echo "Database already exists";
+		echo "<p>Database already exists</p>";
 	}
 	//the query creates a table
 	//the table is to put info in it
