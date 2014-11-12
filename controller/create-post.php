@@ -1,6 +1,8 @@
 <?php
+	//require config file
 	require_once(__DIR__ . "/../model/config.php");
-
+	//able to create connection using mysqli object
+	//all these parameters are in the config.php
 	$connection = new mysqli($host, $username, $password, $database);
 
 	//the variable filters the input and gets the post from title and filters it 
@@ -16,5 +18,5 @@
 	else{
 		echo "<p>$connection->error</p>";
 	}
-
+	//it closes the connection
 	$connection->close();
