@@ -1,0 +1,10 @@
+body{
+	background-color: red;
+}
+/* changes the background color to orange when the screen is 320 px wide */
+@media(max-width: 320px){
+	body{
+		background-color: orange;
+	}
+
+}

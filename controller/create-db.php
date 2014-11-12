@@ -1,6 +1,6 @@
 <?php
 //this looks for database.php
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 
 	// it looks for those variables
 	$connection = new mysqli($host, $username, $password);
