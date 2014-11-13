@@ -10,13 +10,19 @@
 	//the post means to get the data and filter it 
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 	
+	//run query to insert things into the table
+	//sql command starts off with an action/verb
 	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
+	//use conditional statement to see if its true or false
+	// to see we are successful in inserting information into the database
 	if($query) {
+		//if successit outputs with a title
 		echo "<p>Successfully inserted post: $title</p>";
 	}
 	else{
+		//if not successful display an error
 		echo "<p>$connection->error</p>";
 	}
-	//it closes the connection
+	//run query on the connection and it closes the connection
 	$connection->close();
