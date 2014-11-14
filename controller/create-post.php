@@ -17,7 +17,7 @@
 	//use conditional statement to see if its true or false
 	// to see we are successful in inserting information into the database
 	if($query) {
-		//if successit outputs with a title
+		//if successful outputs with a title
 		echo "<p>Successfully inserted post: $title</p>";
 	}
 	else{
