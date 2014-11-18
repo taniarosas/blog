@@ -24,19 +24,25 @@
 			$this->password = $password;
 			$this->database = $database;
 		}
+		//a function will be executed by a call to the function
 		//this function opens the connection
 		public function openConnection() {
-			this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+			//it establishes a new conection
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 			//checks if there is an error in your connection
 			if($this->connection->connect_error){
+				//it outputs error
 				die("<p>Error: " . $this->connection->connect_error . "</p>");
 			}
 		}
 		//this function closes the connection
 		public function closeConnection() {
+			//to check if you opened the connection
+			//isset is checking if the variable has been set
 			if(isset($this->connection)) {
-				this->connection->close();
+				//if its true close the connection
+				$this->connection->close();
 			}
 		}
 		//every time we call the query we have to write a string
