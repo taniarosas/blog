@@ -2,9 +2,6 @@
 //this looks for database.php
 	require_once(__DIR__ . "/../model/config.php");
 
-	// it looks for those variables
-	$connection = new mysqli($host, $username, $password);
-
 	//checks if there is an error in your connection
 	if($connection->connect_error){
 		die("<p>Error: " . $connection->connect_error . "</p>");
