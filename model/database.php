@@ -48,12 +48,13 @@
 		//every time we call the query we have to write a string
 		//in the end it will be passed as a variable 
 		public function query($string) {
+			//to run the openfunction which will open the connection
 			this->openConnection();
-
+			//to query the connection we have 
 			$query = $this->connection->query($string);
-
+			//closes the connection
 			$this->closeConnection();
-
+			//return the result
 			return $query;
 		}
 	}
