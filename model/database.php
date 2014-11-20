@@ -14,6 +14,8 @@
 		//private makes the variables unavailable to other classes
 		private $database;
 
+		public $error;
+
 		//local variables
 		//it is the consructor for the class
 		//this construct function is needed to make objects
@@ -23,7 +25,34 @@
 			$this->username = $username;
 			$this->password = $password;
 			$this->database = $database;
+
+			// it looks for those variables
+			$this->connection = new mysqli($host, $username, $password);
+
+				//checks if there is an error in your connection
+	if($this->connection->connect_error){
+		die("<p>Error: " . $this->connection->connect_error . "</p>");
+	}
+	
+	//it checks if select_db exists
+	$exists = $this->connection->select_db($database);
+	//it checks to see if database doesnt exists
+	if(!$exists){
+
+		//if not then it creates one
+		$query = $this->connection->query("CREATE DATABASE $database");
+		if($query){
+			// if it created it prints out the sentence
+			echo "<p>Successfully created database: " . $database . "</p>" ;
 		}
+	}
+	//database is already there
+	else{
+		echo "<p>Database already exists</p>";
+	}
+		}
+
+
 		//a function will be executed by a call to the function
 		//this function opens the connection
 		public function openConnection() {
@@ -49,9 +78,14 @@
 		//in the end it will be passed as a variable 
 		public function query($string) {
 			//to run the openfunction which will open the connection
-			this->openConnection();
+			$this->openConnection();
 			//to query the connection we have 
 			$query = $this->connection->query($string);
+
+			if(!$query) {
+				$this->error = $this->connection->error;
+			}
+
 			//closes the connection
 			$this->closeConnection();
 			//return the result
