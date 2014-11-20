@@ -1,4 +1,5 @@
 <?php
+	//this looks for database.php file
 	require_once(__DIR__ . "/database.php");
 
 	//a variable that stores our path to our project

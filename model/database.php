@@ -13,7 +13,7 @@
 		private $password;
 		//private makes the variables unavailable to other classes
 		private $database;
-
+		//created a public variable so it could be used anywhere
 		public $error;
 
 		//local variables
@@ -82,7 +82,9 @@
 			//to query the connection we have 
 			$query = $this->connection->query($string);
 
+			//reverses the query to output the false
 			if(!$query) {
+				//uses the error variable
 				$this->error = $this->connection->error;
 			}
 
