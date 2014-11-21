@@ -7,7 +7,8 @@
 	//the table is to put info in it
 	//the table is called post and it must have id, title, and post text
 	//the table must be NOT NULL(not empty)
-	$query = $connection->query("CREATE TABLE posts ("
+	//added a session variable
+	$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		. "title varchar(255) NOT NULL,"
 		. "post text NOT NULL,"
@@ -17,5 +18,6 @@
 		echo "<p>Successfully created a table posts</p>";
 	}
 	else{
-		echo "<p>$connection->error</p>";
+		//added a session variable which preserves a variable
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
