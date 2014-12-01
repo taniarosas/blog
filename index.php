@@ -15,6 +15,6 @@
 	//it stores the footer html code in the footer.php file
 	require_once(__DIR__ . "/view/footer.php");
 
-	$date = new DateTime('today');
+	$date = new DateTime('yesterday');
 ?>
 <p> the output date is: <?php echo $date->format("m.d.y"); ?></p>
