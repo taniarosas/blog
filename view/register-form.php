@@ -1,4 +1,10 @@
-<form>
+<?php
+	//require the config file to get to the $path variable
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
+<h1>Register</h1>
+<form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
 	<div>
 		<!--it labels the email-->
 		<label for="email">Email:</label>
