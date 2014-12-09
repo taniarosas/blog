@@ -22,8 +22,9 @@
 	<div>
 		<!--it labels the password-->
 		<label for="password">Password:</label>
-		<!--it creates a text box where you can input a single line with the text not being visible->
+		<!--it creates a text box where you can input a single line with the text not being visible-->
 		<input type="password" name="password" />
+
 	</div>
 
 	<div>
