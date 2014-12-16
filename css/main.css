@@ -1,7 +1,186 @@
 body{
-	background-color: #69969C;
+	background-color: pink;
 }
-/* changes the background color to orange when the screen is 320 px wide */
+#header{
+	background-color: #103D50;
+	height: 300px;
+	text-align: center;
+	font-size: 50px;
+	padding-top: 6%;
+	font-family: 'Rozha One', serif;
+	color: white;
+}
+#div{
+	height: 2px;
+	background-color: grey;
+	width: 900px;
+	margin-left: 220px;
+	opacity: .8;
+}
+.social-icons{
+	list-style:none;
+	margin:10px auto 0 auto;
+	text-align: right;
+	padding-top: 10px;
+	width: 300px;
+}
+ul li{
+	margin-right:10px;
+}
+ul.social-icons li a{
+	float:left;
+	background-position:0 0;
+	background:repeat:no-repeat;
+	display:inline-block;
+	text-indent:-9999px;
+	overflow:hidden;
+	width:50px;
+	height:50px;
+	position:relative;
+	margin:0 3px;
+	border-radius:50px;
+}
+.google{
+	/*background-image:url('http://i.imgur.com/6y0iC8L.png?1');*/
+   	transition:background-image 0.5s ease-in-out; 
+  	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+  	-o-transition: 0.5s ease-in-out;
+  	margin-right: 10px;
+}
+.twitter{
+	/*background-image:url('http://i.imgur.com/XcI9Ego.png?1');*/
+   	transition:background-image 0.5s ease-in-out; 
+  	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+  	-o-transition: 0.5s ease-in-out;
+  	margin-right: 10px;
+}
+.youtube{
+	/*background-image:url('http://i.imgur.com/IBQanzi.png?1');*/
+   	transition:background-image 0.5s ease-in-out; 
+  	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+  	-o-transition: 0.5s ease-in-out;
+  	margin-right: 10px;
+}
+.facebook{
+	/*background-image:url('http://i.imgur.com/qqQk6GW.png?1');*/
+	
+}
+.google:hover{
+	/*background-image:url('http://i.imgur.com/qgFiraS.png?1');*/
+	transition:background-image 0.5s ease-in-out; 
+ 	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+ 	-o-transition: 0.5s ease-in-out;
+}
+.twitter:hover{
+	background-image:url('http://i.imgur.com/BdgLz5W.png?1');
+   	transition:background-image 0.5s ease-in-out; 
+  	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+  	-o-transition: 0.5s ease-in-out;
+}
+.youtube:hover{
+	background-image:url('http://i.imgur.com/ZAp30Pu.png?1');
+   	transition:background-image 0.5s ease-in-out; 
+ 	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+ 	-o-transition: 0.5s ease-in-out;
+}
+.facebook:hover{
+	background-image:url('http://i.imgur.com/dzgQEBP.jpg?1');
+   	transition:background-image 0.5s ease-in-out; 
+  	-moz-transition: 0.5s ease-in-out; 
+  	-webkit-transition: 0.5s ease-in-out; 
+  	-o-transition: 0.5s ease-in-out;
+}
+#p{
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	color: white;
+}
+#section{
+	height:800px;
+	background-image: url("http://www.fads.co.uk/assets/images/cached/img/1000x750/f6b8e1e31f48754f5ddff67a02e10e4a/product/flourish-white--silver-floral-wallpaper_1320247324.jpg");
+}
+#div1{
+	margin-top: 20px;
+	background-color: #103D50;
+	height: 300px;
+	display: inline-block;
+	float: left;
+	width: 700px;
+	margin-left: 50px;
+	font-family: 'Rozha One', serif;
+	font-size: 17px;
+	color: white;
+	border-radius: 15px;
+	padding: 30px 20px 20px 20px;
+}
+#div2{
+	margin-top: 20px;
+	background-color: #103D50;
+	height: 300px;
+	width: 500px;
+	display: inline-block;
+	margin-left: 50px;
+	color: white;
+	border-radius: 15px;
+}
+#article{
+	height: 200px;
+	width: 300px;
+	margin-left: 100px;
+	border: 3px solid white;
+	font-family: 'Rozha One', serif;
+}
+#div3{
+	margin-top: 20px;
+	background-color: #103D50;
+	height: 300px;
+	display: inline-block;
+	float: left;
+	width: 700px;
+	margin-left: 50px;
+	font-family: 'Rozha One', serif;
+	font-size: 17px;
+	color: white;
+	border-radius: 15px;
+	padding: 30px 20px 20px 20px;
+}
+#div4{
+	display: inline-block;
+	height: 175px;
+	width: 500px;
+	background-color: #103D50; 
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	font-family: 'Rozha One', serif;
+	color: white;
+	border-radius: 15px;
+}
+#footer{
+	height: 100px;
+	background-color: #103D50;
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 70px;
+	font-family: 'Rozha One', serif;
+	font-size: 18px;
+	color: white
+}
+#div5{
+	height: 2px;
+	background-color: grey;
+	width: 200px;
+	margin-bottom: 10px;
+	opacity: .8;
+	margin-left: 150px;
+}
 @media(max-width: 320px){
 	body{
 		background-color: orange;
@@ -12,3 +191,6 @@ body{
 		background-color: lime;
 	}
 }
+.item{
+  	height: 500px;
+  }

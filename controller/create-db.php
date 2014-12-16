@@ -16,14 +16,14 @@
 		. "DateTime datetime NOT NULL, "
 		. "PRIMARY KEY (id) )");
 	//check to see if the table is created successfully
-	if($query) {
+	/*if($query) {
 		echo "<p>Successfully created a table posts</p>";
 	}
 	else{
 		//added a session variable which preserves a variable
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
-
+*/
 	//the query creates a table 
 	//the table stores users
 	//the table is called users 
@@ -36,7 +36,7 @@
 		. "password char(128) NOT NULL, "
 		. "salt char(128) NOT NULL, "
 		. "PRIMARY KEY (id))");
-	if($query) {
+	/*if($query) {
 		//checks if the table was created successfully
 		echo "<p>Successfully created table: users</p>";
 	}
@@ -44,3 +44,4 @@
 		//added a session variable, which preserves info
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
+	*/

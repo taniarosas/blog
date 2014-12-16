@@ -8,8 +8,8 @@
 			echo "<div class='post'>";
 			echo "<h2>" . $row['title'] . "</h2>";
 			echo "<br />";
-			echo "<p>" . $row['post'] . "</h1>";
+			echo "<p>" . $row['post'] . "</p>";
 			echo "<br/>";
-			echo "</div";
+			echo "</div>";
 		}
 	}
