@@ -2,8 +2,9 @@
 	//require the config file to get to the $path variable
 	require_once(__DIR__ . "/../model/config.php");
 ?>
-
+<!-- this is just to label our page-->
 <h1>Login</h1>
+<!-- method is post because this is how we send the info-->
 <form method="post" action="<?php echo $path . "controller/login-user.php"?>">
 	<div>
 		<!--it labels the username-->
