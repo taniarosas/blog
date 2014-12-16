@@ -32,8 +32,12 @@
 		Tania's Blog
 		<p id="p">App Academy</p>
 		<div id="div"></div>
+		<nav>
+		<a href="register.php">Register</a>
+		<a href="login.php">Login</a>
+		<a href="/../controller/log-out.php">Logout</a>
+</nav>
 	</header>
-
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   	<ol class="carousel-indicators">
