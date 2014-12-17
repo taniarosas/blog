@@ -1,29 +1,30 @@
 <?php
-	//this looks for database.php file
-	require_once(__DIR__ . "/database.php");
-	//starts the session variable
-	session_start();
 
-	session_regenerate_id(true);
+//this looks for database.php file
+require_once(__DIR__ . "/database.php");
+//starts the session variable
+session_start();
 
-	//a variable that stores our path to our project
-	$path = "/blog/";
+session_regenerate_id(true);
 
-	// this is where you store info
-	//*note you dont need a closing tag when there is only php
-	// you are storing database server information here
-	$host = "localhost";
-	$username = "root";
-	$password = "root";
-	$database = "blog_db";
+//a variable that stores our path to our project
+$path = "/blog/";
 
-	//checks if the variable has been set and reverses the output
-	if(!isset($_SESSION["connection"])){
+// this is where you store info
+//*note you dont need a closing tag when there is only php
+// you are storing database server information here
+$host = "localhost";
+$username = "root";
+$password = "root";
+$database = "blog_db";
 
-		//created a new object 
-		$connection = new Database($host, $username, $password, $database);
-		//added a session variable which preserves information
-		$_SESSION["connection"] = $connection;
+//checks if the variable has been set and reverses the output
+if (!isset($_SESSION["connection"])) {
 
-	}
+    //created a new object 
+    $connection = new Database($host, $username, $password, $database);
+    //added a session variable which preserves information
+    $_SESSION["connection"] = $connection;
+}
+
 
