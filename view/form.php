@@ -28,4 +28,4 @@ if (!authenticateUser()) {
         <!--creates a button to submit the text -->
         <button type="submit">Submit</button>
     </div>
-</form
+</form>
