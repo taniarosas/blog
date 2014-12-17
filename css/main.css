@@ -41,7 +41,6 @@ ul.social-icons li a{
     border-radius:50px;
 }
 .google{
-    /*background-image:url('http://i.imgur.com/6y0iC8L.png?1');*/
     transition:background-image 0.5s ease-in-out; 
     -moz-transition: 0.5s ease-in-out; 
     -webkit-transition: 0.5s ease-in-out; 
@@ -57,7 +56,6 @@ ul.social-icons li a{
     margin-right: 10px;
 }
 .youtube{
-    /*background-image:url('http://i.imgur.com/IBQanzi.png?1');*/
     transition:background-image 0.5s ease-in-out; 
     -moz-transition: 0.5s ease-in-out; 
     -webkit-transition: 0.5s ease-in-out; 
